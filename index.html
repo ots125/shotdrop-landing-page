@@ -74,33 +74,34 @@
       justify-content: center;
       flex-wrap: wrap;
     }
-
     @media (max-width: 600px) {
       h1 {
         font-size: 2rem;
       }
-
       p.subheadline {
         font-size: 1rem;
       }
-
       ul.benefits li {
         font-size: 0.95rem;
       }
-
       input[type="email"] {
         width: 100%;
         margin: 0 0 1rem 0;
       }
-
       button {
         width: 100%;
       }
-
       form {
         flex-direction: column;
         align-items: stretch;
       }
+    }
+    iframe {
+      margin-top: 2rem;
+      width: 100%;
+      max-width: 640px;
+      height: 375px;
+      border: none;
     }
   </style>
 </head>
@@ -126,6 +127,8 @@
         <input type="email" placeholder="Enter your email" required oninput="console.log('Email input changed:', this.value)" />
         <button type="submit">Join the Waitlist</button>
       </form>
+
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf22eNjn5SaFpl3TYBEEBjVM6fVOfdJ95mHH0raL4SaOzoSsA/viewform?embedded=true" allowfullscreen>Loading…</iframe>
     </div>
 
     <div class="footer">
@@ -134,3 +137,4 @@
   </div>
 </body>
 </html>
+
